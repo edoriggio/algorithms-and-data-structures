@@ -5,7 +5,7 @@
 
 numbs = [int(i) for i in input().split(' ')]
 
-def insertion_sort(numbs: list):
+def insertion_sort(numbs: list) -> list:
     """
     Go through the array from left to right. If the number in
     the i-th position is samller than the number before it,

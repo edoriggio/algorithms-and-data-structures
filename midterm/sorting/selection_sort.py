@@ -5,7 +5,7 @@
 
 numbs = [int(i) for i in input().split(' ')]
 
-def selection_sort(numbs: list):
+def selection_sort(numbs: list) -> list:
     """
     Go through the list from left to right and serarch for the
     maximum. Once the maximum is found, swap it with the

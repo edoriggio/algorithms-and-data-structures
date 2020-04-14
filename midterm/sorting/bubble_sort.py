@@ -5,7 +5,7 @@
 
 numbs = [int(i) for i in input().split(' ')]
 
-def bubble_sort(numbs: list):
+def bubble_sort(numbs: list) -> list:
     """
     Go through the array from left to right, for each couple of
     numbers, check which one is bigger. If the first element of

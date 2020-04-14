@@ -1,7 +1,7 @@
 # Time complexities:
-# Best case -> O(n) -> When the array is already sorted
-# Average case -> O(n^2)
-# Worst case -> O(n^2)
+# Best case -> O(1) -> When the number to be found is equal to mid
+# Average case -> O(log(n))
+# Worst case -> O(log(n))
 
 from math import ceil
 
@@ -9,6 +9,22 @@ numbs = [int(i) for i in input().split(' ')]
 to_find = int(input())
 
 def binary_search(numbs: list, to_find: int) -> bool:
+    """
+    Get the element in the middle of a sorted array. If the number
+    to find si greater than the mid, then let the right subarray be
+    the new array and repeat the first step here. Otherwise repeat
+    the first step on the left subarray. If the value to find is
+    equal to the mid, then return true. If the element is not found
+    (i.e. the array's length is 0), then return false.
+
+    Args:
+        numbs (list): the array to be sorted
+        to_find (int): the element to be found in the array
+
+    Returns:
+        (bool) True if the element is in the array
+               False if the element is not in the array
+    """
     while len(numbs) > 0:
         mid = ceil(len(numbs) / 2) - 1
 

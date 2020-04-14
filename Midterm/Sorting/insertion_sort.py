@@ -1,3 +1,4 @@
+# Time complexities:
 # Best case -> O(n) -> When the list is already sorted
 # Average case -> O(n^2)
 # Worst case -> O(n^2) -> When the list is in reverse order
@@ -16,7 +17,7 @@ def insertion_sort(numbs: list):
         numbs (list): the array to be sorted
     
     Returns:
-        (list) the sorted array
+        (list) The sorted array
     """
     for i in range(len(numbs)):
         temp = i

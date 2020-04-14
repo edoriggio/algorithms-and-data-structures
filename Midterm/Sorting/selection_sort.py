@@ -1,3 +1,4 @@
+# Time complexities:
 # Best case -> O(n^2)
 # Average case -> O(n^2)
 # Worst case -> O(n^2)
@@ -17,7 +18,7 @@ def selection_sort(numbs: list):
         numbs (list): the array to be sorted
     
     Returns:
-        (list) the sorted array
+        (list) The sorted array
     """
     j = len(numbs) - 1
     

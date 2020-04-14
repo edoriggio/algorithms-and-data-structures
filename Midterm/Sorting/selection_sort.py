@@ -2,8 +2,6 @@
 # Average case -> O(n^2)
 # Worst case -> O(n^2)
 
-import sys
-
 numbs = [int(i) for i in input().split(' ')]
 
 def selection_sort(numbs: list):
@@ -12,7 +10,8 @@ def selection_sort(numbs: list):
     maximum. Once the maximum is found, swap it with the
     element at the end of the array. Repeat the same procedure
     on the subarray that goes from the beginning to the maximum
-    (excluded), until the array is sorted
+    (excluded), until the array is sorted (i.e. when the subarray
+    is composed of only one element).
 
     Args:
         numbs (list): the array to be sorted

@@ -15,7 +15,7 @@ def selection_sort(numbs: list) -> list:
     is composed of only one element).
 
     Args:
-        numbs (list): the array to be sorted
+        numbs (list): The array to be sorted
     
     Returns:
         (list) The sorted array

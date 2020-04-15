@@ -9,9 +9,9 @@ def merge(numbs1: list, numbs2: list):
     to a third array and increase the index from which the
     element was taken by one. If the two elements are the
     same, then add one of them to the third array and
-    increase both indexes by one. Repeat this process until
-    the end of both arrays. If one of the two arrays is
-    bigger, then add the remaining elements of the biggest
+    increase both indexes by one. The process is repeated 
+    until the end of both arrays. If one of the two arrays
+    is bigger, then add the remaining elements of the biggest
     array at the end of the iterations.
 
     Args:

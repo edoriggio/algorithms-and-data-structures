@@ -11,10 +11,10 @@ def bubble_sort(numbs: list) -> list:
     numbers, check which one is bigger. If the first element of
     the couple is bigger than the second, swap the two numbers.
     Repeat the same process until the array is sorted (i.e.
-    when the number of swaps is equal to 0)
+    when the number of swaps is equal to 0).
 
     Args:
-        numbs (list): the array to be sorted
+        numbs (list): The array to be sorted
     
     Returns:
         (list) The sorted array

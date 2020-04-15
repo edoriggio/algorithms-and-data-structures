@@ -14,7 +14,7 @@ def insertion_sort(numbs: list) -> list:
     reached).
 
     Args:
-        numbs (list): the array to be sorted
+        numbs (list): The array to be sorted
     
     Returns:
         (list) The sorted array

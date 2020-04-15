@@ -18,8 +18,8 @@ def binary_search(numbs: list, to_find: int) -> bool:
     (i.e. the array's length is 0), then return false.
 
     Args:
-        numbs (list): the array to be sorted
-        to_find (int): the element to be found in the array
+        numbs (list): The array to be sorted
+        to_find (int): The element to be found in the array
 
     Returns:
         (bool) True if the element is in the array

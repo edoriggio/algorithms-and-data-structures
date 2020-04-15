@@ -8,7 +8,7 @@ from random import randint
 numbs = [int(i) for i in input().split(' ')]
 to_find = int(input())
 
-def selection(numbs, to_find) -> int:
+def selection(numbs: list, to_find: int) -> int:
     """
     Generate a random number between 0 and the length of
     the array - 1. Go through the list from left to right.

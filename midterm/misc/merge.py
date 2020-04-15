@@ -1,7 +1,7 @@
 numbs1 = [int(i) for i in input().split(' ')]
 numbs2 = [int(i) for i in input().split(' ')]
 
-def merge(numbs1: list, numbs2: list):
+def merge(numbs1: list, numbs2: list) -> list:
     """
     Go through the two sorted arrays simultaneously from
     left to right. Find the smallest element between the 

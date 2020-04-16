@@ -9,6 +9,20 @@ from merge import merge
 numbs = [int(i) for i in input().split(' ')]
 
 def merge_sort(numbs: list) -> list:
+    """
+    Find the midpoint of the array and divide it into
+    two subarrays. This is repeated until the subarrays
+    have all length = 1. After the array has been
+    divided, apply the merge algorithm on the subarrays
+    in order to obtain a final sorted array (without
+    duplicates)
+
+    Args:
+        numbs (list): The array to be sorted
+
+    Returns:
+        (list): The sorted array
+    """
     if len(numbs) < 2: 
         return numbs
   

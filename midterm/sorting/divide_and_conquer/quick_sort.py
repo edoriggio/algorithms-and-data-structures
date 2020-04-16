@@ -1,7 +1,7 @@
 # Time complexities:
 # Best case -> O(nlog(n))
 # Average case -> O(nlog(n))
-# Worst case -> O(nlog(n))
+# Worst case -> O(n^2)
 
 numbs = [int(i) for i in input().split(' ')]
 

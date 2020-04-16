@@ -29,7 +29,8 @@ def merge_sort(numbs: list) -> list:
     mid = ceil(len(numbs) / 2)
     left = merge_sort(numbs[:mid]) 
     right = merge_sort(numbs[mid:]) 
-  
+    
+    # Merge algorithm is the same as /midterm/misc/merge.py
     return merge(left, right)
 
 # Test with user input

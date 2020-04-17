@@ -16,7 +16,7 @@ class Node:
 
     def parent(self, node: int) -> int:
         """
-        Calculate the key of the parent of 
+        Calculate the key of the parent of
         the current node.
 
         Args:
@@ -29,7 +29,7 @@ class Node:
 
     def left(self, node: int):
         """
-        Calculate the key of the left child of 
+        Calculate the key of the left child of
         the current node.
 
         Args:
@@ -42,7 +42,7 @@ class Node:
 
     def right(self, node: int):
         """
-        Calculate the key of the right child of 
+        Calculate the key of the right child of
         the current node.
 
         Args:
@@ -110,7 +110,7 @@ def build_max_heap(heap: list):
                      the action
     """
     half = floor(heap_size(heap) / 2)
-    
+
     for _ in heap[half::-1]:
         max_heapify(heap)
 
@@ -168,7 +168,7 @@ def print_heap(heap: list) -> str:
         (str): The heap and the size of the heap
     """
     printable = []
-    
+
     for i in test_heap:
         if i is not None:
             printable.append(i.value)

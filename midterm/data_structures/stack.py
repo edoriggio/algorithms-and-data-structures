@@ -64,9 +64,8 @@ class Stack:
             self.data[self.top] = None
             self.is_empty = True if self.top == 0 else False
         else:
-            self.is_empty = True
             print('Stack Underflow')
-    
+
     def check_empty(self) -> bool:
         """
         Check if the stack is empty or not.

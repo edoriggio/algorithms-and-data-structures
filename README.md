@@ -19,7 +19,7 @@ Set of algorithms from the 2020 spring semester @ USI University
   - Data Structures -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures)
     - Binary heap -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/binary_heap.py)
     - TODO
-    - TODO
+    - Priority queue -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/priority_queue.py)
     - Queue -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/queue.py)
     - Stack -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/stack.py)
   - Miscellaneous -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/misc)

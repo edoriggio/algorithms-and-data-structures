@@ -132,11 +132,11 @@ for l in sys.stdin:
         print('%')
         continue
 
-    if l[0] == 'init':
+    elif l[0] == 'init':
         test_queue = Queue(int(l[1]))
         print('%')
 
-    if l[0] == '+':
+    elif l[0] == '+':
         test_queue.enqueue(int(l[1]))
         print('%')
 

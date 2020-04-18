@@ -200,7 +200,7 @@ for l in sys.stdin:
         print('%')
         continue
 
-    if l[0] == 'build':
+    elif l[0] == 'build':
         build_max_heap(test_heap)
         print('%')
 

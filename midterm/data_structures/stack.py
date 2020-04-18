@@ -92,11 +92,11 @@ for l in sys.stdin:
         print('%')
         continue
 
-    if l[0] == 'init':
+    elif l[0] == 'init':
         test_stack = Stack(int(l[1]))
         print('%')
 
-    if l[0] == 'push':
+    elif l[0] == 'push':
         test_stack.push(int(l[1]))
         print('%')
 

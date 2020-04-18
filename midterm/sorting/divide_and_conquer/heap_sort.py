@@ -17,9 +17,9 @@
 # Average case -> O(nlog(n))
 # Worst case -> O(nlog(n))
 
-from binary_heap import Node, build_max_heap, max_heapify, heap_size
+from binary_heap import build_max_heap, max_heapify
 
-numbs = [Node(int(i)) for i in input().split(' ')]
+numbs = [int(i) for i in input().split(' ')]
 
 def heap_sort(heap: list) -> list:
     """
@@ -36,23 +36,25 @@ def heap_sort(heap: list) -> list:
     Returns:
         (list): The sorted heap
     """
-    size = heap_size(heap) - 1
     build_max_heap(heap)
+    i = len(heap) - 1
+    heap_size = len(heap)
 
-    for i in range(size, 1, -1):
-        heap[i], heap[0] = heap[0], heap[i]
-        size -= 1
-        max_heapify(heap, size)
+    while i >= 1:
+        temp = heap[0]
+        heap[0] = heap[i]
+        heap[i] = temp
+        heap_size -= 1
+        max_heapify(heap, 0, heap_size)
+        i -= 1
 
-    printable = []
-
-    for i in heap:
-        printable.append(i.value)
-
-    return printable
+    return heap
 
 # Test with user input
 print(heap_sort(numbs))
 
 # Tests without user input
-assert heap_sort([Node(5),Node(2),Node(7),Node(4),Node(1)]) == [1,2,4,5,7]
+assert heap_sort([5,2,7,4,1]) == [1,2,4,5,7]
+assert heap_sort([10,1,4,6,2]) == [1,2,4,6,10]
+assert heap_sort([5,2,9,1,4]) == [1,2,4,5,9]
+assert heap_sort([7,6,4,3,2,1]) == [1,2,3,4,6,7]

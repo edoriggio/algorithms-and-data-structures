@@ -122,6 +122,8 @@ class Priority_Queue:
         """
         print('Data: {} Length: {}'.format(self.data, len(self.data)))
 
+test_queue: Priority_Queue
+
 # Driver
 for l in sys.stdin:
     l = l.split()

@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Time complexities:
 # Best case -> O(1) -> When the number to be found is equal to mid
 # Average case -> O(log(n))
 # Worst case -> O(log(n))

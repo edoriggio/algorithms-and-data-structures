@@ -12,26 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Time complexity -> O(|V|+|E|)
+# Time complexity -> Θ(|V|+|E|)
 
 from graphs import *
 
-def bfs_algo(graph, start, print_out = True):
+def dfs_algo(graph, print_out = True):
     """
     Function that recreates the Breath First Search
-    algorithm, using a queue as its data structure.
+    algorithm, using a stack as its data structure.
     In this algorithm, when a node is analyzed, it is
-    marked as visited and all of its children are
-    added to the queue (if their not in it already).
-    The next node to be analyzed is given both by the
-    queue and the 'visited' array. If a node is
-    dequeued and it is not in the 'visited' array, then
-    it is analyzed.
+    marked as visited and the topologically smallest
+    child is added to the stack (if their not in it 
+    already). The next node to be analyzed is given 
+    both by the stack and the 'visited' array. If a
+    node is popped and it is not in the 'visited'
+    array, then it is analyzed.
 
     Args:
         graph (dict): A dictionary representing the graph
                       to analyze
-        start (Any): Where to start the analysis
         print_out (Bool, default: True): Decide whether to
                                          print the steps
 
@@ -40,25 +39,25 @@ def bfs_algo(graph, start, print_out = True):
                 of how they were visited
     """
     visited = []
-    queue = [start]
+    stack = [next(iter(graph))]
 
-    while queue:
-        element = queue.pop(0)
-        
-        for neighbor in graph[element]:
-            if neighbor not in queue:
-                if neighbor not in visited:
-                    queue.append(neighbor)
-        
+    while stack:
+        element = stack.pop()
+
+        for neighbor in reversed(graph[element]):
+            if neighbor not in visited:
+                if neighbor not in stack:
+                    stack.append(neighbor)
+
         if element not in visited:
             visited.append(element)
 
         if print_out:
             print('Node:', element,\
-                '  Queue:', queue,\
+                '  Stack:', stack,\
                 '  Visited:', visited)
-    
+
     return visited
 
-print(bfs_algo(graph_numbers, 1), end='\n\n')
-print(bfs_algo(graph_letters, 'A', False), end='\n\n')
+print(dfs_algo(graph_numbers), end='\n\n')
+print(dfs_algo(graph_letters, False), end='\n\n')

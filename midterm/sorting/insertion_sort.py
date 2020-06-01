@@ -14,6 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Time complexities:
 # Average case -> O(n^2)
 # Worst case -> O(n^2) -> When the list is in reverse order
 

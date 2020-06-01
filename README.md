@@ -18,10 +18,13 @@ Set of algorithms from the 2020 spring semester @ USI University
     - Linear search -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/searching/linear_search.py)
   - Data Structures -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures)
     - Binary heap -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/binary_heap.py)
-    - TODO
     - Priority queue -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/priority_queue.py)
     - Queue -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/queue.py)
     - Stack -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/data_structures/stack.py)
   - Miscellaneous -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/misc)
     - Merge -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/misc/merge.py)
     - Selection -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/misc/selection.py)
+
+- **Final**
+  - Graphs -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs)
+    - Breath First Search -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs/bfs.py)

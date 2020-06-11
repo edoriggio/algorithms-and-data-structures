@@ -30,3 +30,9 @@ Set of algorithms from the 2020 spring semester @ USI University
     - Breath First Search -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs/bfs.py)
     - Depth First Search -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs/dfs.py)
     - Dijkstra Algorithmm [NOT WORKING] -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs/dijkstra.py)
+
+- **Exercises**
+  - Exercise Sheet -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet)
+  - Dynamic Programming -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/dynamic)
+    - Fibonacci -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/dynamic/dp_fibonacci.py)
+    - Knapsack -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/dynamic/dp_knapsack.py)

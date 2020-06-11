@@ -21,7 +21,7 @@ numbs = [int(i) for i in input().split(' ')]
 
 def selection_sort(numbs: list) -> list:
     """
-    Go through the list from left to right and serarch for the
+    Go through the list from left to right and search for the
     maximum. Once the maximum is found, swap it with the
     element at the end of the array. Repeat the same procedure
     on the subarray that goes from the beginning to the maximum

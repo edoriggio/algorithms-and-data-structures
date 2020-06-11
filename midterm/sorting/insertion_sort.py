@@ -15,15 +15,16 @@
 # limitations under the License.
 
 # Time complexities:
-# Average case -> O(n^2)
-# Worst case -> O(n^2) -> When the list is in reverse order
+# Best case -> Θ(n)
+# Average case -> Θ(n^2)
+# Worst case -> Θ(n^2) -> When the list is in reverse order
 
 numbs = [int(i) for i in input().split(' ')]
 
 def insertion_sort(numbs: list) -> list:
     """
     Go through the array from left to right. If the number in
-    the i-th position is samller than the number before it,
+    the i-th position is smaller than the number before it,
     swap the two numbers. Repeat the same procedure until
     the array is sorted (i.e. when the end of the array is
     reached).

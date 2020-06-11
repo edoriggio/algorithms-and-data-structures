@@ -19,8 +19,6 @@
 # Complexity:
 # O(n^2)
 
-array = [7,17,89,74,21,7,43,9,26,10]
-
 def in_place_sel_sort(array):
     for i in range(len(array)):
         temp = i
@@ -35,4 +33,4 @@ def in_place_sel_sort(array):
 
     return array
 
-print(in_place_sel_sort(array))
+print(in_place_sel_sort([7,17,89,74,21,7,43,9,26,10]))

@@ -17,16 +17,12 @@
 # in an array using a divide-and-conquer strategy.
 
 # Complexity:
-# O(nlog(n)) - The complexity of this algorithm is nlog(n), the same
-# as quick sort.
-
-array = [10,2,40,20,2,9,8]
+# O(nlog(n))
 
 def partition(array, low, high):
     i = low - 1
     pivot = array[high]
 
-    # (1)
     for j in range(low, high):
         if array[j] <= pivot:
             i += 1
@@ -46,4 +42,4 @@ def find_largest(array, high, low = 0):
 
     return array[-1]
 
-print(find_largest(array, len(array)-1))
+print(find_largest([10,2,40,20,2,9,8], len(array)-1))

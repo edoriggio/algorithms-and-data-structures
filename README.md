@@ -33,10 +33,10 @@ Set of algorithms from the 2020 spring semester @ USI University
     
 - **Exercises**
   - Exercise Sheet -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet)
-    - Exercise #2 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet/#2.py)
-    - Exercise #12 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet/#12.py)
-    - Exercise #15 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet/#15.py)
-    - Exercise #22 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet/#22.py)
+    - Exercise #2 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet#2.py)
+    - Exercise #12 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet#12.py)
+    - Exercise #15 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet#15.py)
+    - Exercise #22 -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/sheet#22.py)
   - Dynamic Programming -> [navigate](http://github.com/edoriggio/algo2020/tree/master/final/dynamic)
     - Fibonacci -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/dynamic/dp_fibonacci.py)
     - Knapsack -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/dynamic/dp_knapsack.py)

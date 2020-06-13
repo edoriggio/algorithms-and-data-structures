@@ -16,7 +16,7 @@
 
 from graphs import *
 
-def dfs_algo(graph, print_out = True):
+def dfs_algo(graph, start, print_out = True):
     """
     Function that recreates the Breath First Search
     algorithm, using a stack as its data structure.
@@ -39,12 +39,16 @@ def dfs_algo(graph, print_out = True):
                 of how they were visited
     """
     visited = []
-    stack = [next(iter(graph))]
+
+    if start in graph:
+        stack = [start]
+    else:
+        stack = []
 
     while stack:
         element = stack.pop()
 
-        for neighbor in reversed(graph[element]):
+        for neighbor in graph[element]:
             if neighbor not in visited:
                 if neighbor not in stack:
                     stack.append(neighbor)
@@ -59,5 +63,5 @@ def dfs_algo(graph, print_out = True):
 
     return visited
 
-print(dfs_algo(graph_numbers), end='\n\n')
-print(dfs_algo(graph_letters, False), end='\n\n')
+print(dfs_algo(graph_numbers, 1,False), end='\n\n')
+print(dfs_algo(graph_letters, 'A'), end='\n\n')

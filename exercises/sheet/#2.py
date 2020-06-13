@@ -42,4 +42,4 @@ def find_largest(array, high, low = 0):
 
     return array[-1]
 
-print(find_largest([10,2,40,20,2,9,8], len(array)-1))
+print(find_largest([10,2,40,20,2,9,8], 6))

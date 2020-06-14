@@ -12,23 +12,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Problem:
-# Find the n-th number of the Fibonacci sequence by only using dynamic
-# programming and memoization.
-
-# Complexity:
-# O(n)
-
-def dp_fib(n):
-    memo = []
-
-    for k in range(n):
-        if k < 2:
-            memo.append(1)
+def is_prime(number):
+    if number > 1:
+        for i in range(2, number):
+            if number % i == 0:
+                return False
+                break
         else:
-            next_n = memo[k-1] + memo[k-2]
-            memo.append(next_n)
+            return True
+    else:
+        return False
 
-    return memo
+def partition_primes_composite(array):
+    i = 0
 
-print(dp_fib(10))
+    for j in range(1, len(array)):
+        if(is_prime(array[j])):
+            array[i], array[j] = array[j], array[i]
+            i += 1
+
+    return array
+
+print(partition_primes_composite([1,5,12,7,3,11,14,13,17]))

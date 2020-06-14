@@ -16,7 +16,7 @@
 # Develop an efficient in-place algorithm called Partition-Even-Odd(A) 
 # that partitions an array A in even and odd numbers. The algorithm must
 # terminate with A containing all its even elements preceding all its odd
-# elements. For example, for input A = [h7, 17, 74, 21, 7, 9, 26, 10], the 
+# elements. For example, for input A = [7, 17, 74, 21, 7, 9, 26, 10], the 
 # result might be A = [74, 10, 26, 17, 7, 21, 9, 7]. Partition-Even-Odd 
 # must be an in-place algorithm, which means that it may use only a constant
 # memory space in addition to A. In practice, this means that you may not

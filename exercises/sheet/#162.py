@@ -12,6 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Problem:
+# Write an algorithm Partition-Primes-Composites(A) that takes an array A
+# of n integers such that 1 < A[i] ≤ m for all i, and partitions A in-place
+# so that all primes precede all composites in A. Analyze the complexity of
+# your solution as a function of n and m. Recall that an integer greater
+# than 1 is prime if it is divisible by only two positive integers (itself
+# and 1) or otherwise it is composite.
+
+# Complexity:
+# O(n)
+
 def is_prime(number):
     if number > 1:
         for i in range(2, number):

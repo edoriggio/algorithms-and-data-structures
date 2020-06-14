@@ -41,9 +41,9 @@ def bfs_algo(graph, start, print_out = True):
     """
     visited = []
     if start in graph:
-        stack = [start]
+        queue = [start]
     else:
-        stack = []
+        queue = []
 
     while queue:
         element = queue.pop(0)

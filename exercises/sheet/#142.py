@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Problem:
 # Consider the following sorting problem: you must reorder the elements of an
 # array of numbers in-place so that odd numbers are in odd positions while
 # even numbers are in even positions. If there are more even elements than

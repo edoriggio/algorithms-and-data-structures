@@ -44,3 +44,10 @@ graph_letters_cycle = {
     'E' : ['F'],
     'F' : ['C']
 }
+
+user_network = {
+    'a' : ['h', 'f'],
+    'b' : ['g','i','e'],
+    'c' : ['i','f','e'],
+    'd' : ['i', 'e']
+}

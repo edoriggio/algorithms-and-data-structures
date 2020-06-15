@@ -45,6 +45,7 @@ Set of algorithms from the 2020 spring semester @ USI University
     - Exercise #142 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%23142.py)
     - Exercise #143 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%23143.py)
     - Exercise #150 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%23150.py)
+    - Exercise #154 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%23154.py)
     - Exercise #156 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%23156.py)
     - Exercise #159 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%23159.py)
     - Exercise #162 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%23162.py)

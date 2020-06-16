@@ -54,6 +54,6 @@ def three_way_partition(array, numb):
                 array[numb], array[same] = array[same], array[numb]
                 same -= 1
     
-    return array
+    return (same, i+2)
 
 print(three_way_partition([1,7,1,8,8,10,2,8,40,32,11,27], 8))

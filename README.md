@@ -31,6 +31,12 @@ Set of algorithms from the 2020 spring semester @ USI University
     - Depth First Search -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs/dfs.py)
     
 - **Exercises**
+  - Midterm -> [navigate](https://github.com/edoriggio/algo-2020/tree/master/exercises/midterm)
+    - Exercise #1 -> [navigate](https://github.com/edoriggio/algo-2020/tree/master/exercises/midterm/%231.py)
+    - Exercise #2 -> [navigate](https://github.com/edoriggio/algo-2020/tree/master/exercises/midterm/%232.py)
+    - Exercise #3 -> [navigate](https://github.com/edoriggio/algo-2020/tree/master/exercises/midterm/%233.py)
+    - Exercise #4 -> [navigate](https://github.com/edoriggio/algo-2020/tree/master/exercises/midterm/%234.py)
+    - Exercise #5 -> [navigate](https://github.com/edoriggio/algo-2020/tree/master/exercises/midterm/%235.py)
   - Exercise Sheet -> [navigate](https://github.com/edoriggio/algo-2020/tree/master/exercises/sheet)
     - Exercise #2 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%232.py)
     - Exercise #12 -> [navigate](https://github.com/edoriggio/algo-2020/blob/master/exercises/sheet/%2312.py)

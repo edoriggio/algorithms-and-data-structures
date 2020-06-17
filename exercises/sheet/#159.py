@@ -39,6 +39,4 @@ def linked(word_1, word_2):
         
     return True
 
-    print(longest, shortest)
-
 print(linked('list', 'last'))

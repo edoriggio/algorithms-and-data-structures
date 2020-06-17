@@ -29,13 +29,8 @@ def three_way_partition(array, numb):
     pivot = numb
     same = 0
 
-    for element in array:
-        if array[element] == numb:
-            array[element], array[-1] = array[-1], array[element] 
-            break
-
     for j in range(1, len(array)):
-        if array[j] <= array[-1]:
+        if array[j] <= numb:
             i += 1
             array[i], array[j] = array[j], array[i]
 
@@ -54,6 +49,6 @@ def three_way_partition(array, numb):
                 array[numb], array[same] = array[same], array[numb]
                 same -= 1
     
-    return (same, i+2)
+    return (same, i+2, array)
 
 print(three_way_partition([1,7,1,8,8,10,2,8,40,32,11,27], 8))

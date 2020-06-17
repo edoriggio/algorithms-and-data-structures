@@ -21,29 +21,35 @@
 # Complexity:
 # O(|V|+|E|)
 
-from graphs import *
+from graphs import graph_letters_cycle, graph_letters_cycle_4, graph_no_cycles
 
-def has_cycle(graph, vertex, stack, visited):
-        visited.append(vertex)
-        stack.append(vertex)
-        for n in graph[vertex]:
-            if n not in visited:
-                if has_cycle(graph, n, visited, stack):
-                    return True
-            elif n in stack:
+def has_cycle_helper(graph, node, stack, visited):
+    visited.append(node)
+    stack.append(node)
+    
+    for i in graph[node]:
+        if i not in visited:
+            if has_cycle_helper(graph, i, visited, stack):
                 return True
-        stack.remove(vertex)
-        return False
+        elif i in stack:
+            return True
+
+    stack.remove(node)
+
+    return False
 
 def four_cycle(graph):
     visited = []
     stack = []
-    for v in graph:
-        if v not in visited:
-            if has_cycle(graph, v, stack, visited) and len(stack) == 4:
+
+    for i in graph:
+        if i not in visited:
+            if has_cycle_helper(graph, i, stack, visited) and len(stack) == 4:
                 return True
+        
         visited = []
         stack = []
+
     return False
 
 print(four_cycle(graph_letters_cycle_4))

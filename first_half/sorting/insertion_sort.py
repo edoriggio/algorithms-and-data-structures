@@ -34,11 +34,8 @@ def insertion_sort(array: list) -> list:
     the array is sorted (i.e. when the end of the array is
     reached).
 
-    Args:
-        array (list): The array to be sorted
-    
-    Returns:
-        (list) The sorted array
+    :param array: The array to be sorted
+    :return: The sorted array
     """
 
     for j in range(1, len(array)):
@@ -55,6 +52,16 @@ def insertion_sort(array: list) -> list:
 
 
 def running_times(n_tests, steps):
+    """
+    Go though the tests until the number of elements is equal
+    to the one given by the user. Creates an array of tuples
+    composed by the execution time and the number of elements
+    that where sorted.
+
+    :param n_tests: The number of elements to be executed
+    :param steps: The number of tests to skip every iteration
+    :return:
+    """
     times = []
 
     for i in tqdm.tqdm(range(0, n_tests, steps)):

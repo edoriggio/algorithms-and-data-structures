@@ -28,7 +28,7 @@ def merge_sort(numbs: list) -> list:
     two subarrays. This is repeated until the subarrays
     have all length = 1. After the array has been
     divided, apply the merge algorithm on the subarrays
-    in order to obtain a final sorted array (without
+    in order to obtain a second_half sorted array (without
     duplicates)
 
     Args:
@@ -44,7 +44,7 @@ def merge_sort(numbs: list) -> list:
     left = merge_sort(numbs[:mid]) 
     right = merge_sort(numbs[mid:]) 
     
-    # Merge algorithm is the same as /midterm/misc/merge.py
+    # Merge algorithm is the same as /first_half/misc/merge.py
     return merge(left, right)
 
 # Test with user input

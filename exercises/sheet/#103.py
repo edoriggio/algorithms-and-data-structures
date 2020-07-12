@@ -15,7 +15,7 @@
 # Problem:
 # Write an in-place partition algorithm called Modulo-Partition(A) that
 # takes an array A of n numbers and changes A in such a way that (1) the
-# final content of A is a permutation of the initial content of A, and
+# second_half content of A is a permutation of the initial content of A, and
 # (2) all the values that are equivalent to 0 mod 10 precede all the values
 # equivalent to 1 mod 10, which precede all the values equivalent to 2 mod
 # 10, etc. Being an in-place algorithm, Modulo-Partition must not allocate

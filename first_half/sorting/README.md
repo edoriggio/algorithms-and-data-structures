@@ -1,5 +1,31 @@
 # Sorting Algorithms
 
+A sorting algorithm is an algorithm that is used to put the elements of an array in a certain order.
+
+## Bubblesort
+
+### Abstract
+
+This simple algorithm performs poorly in real world use and is used primarily as an educational tool. It works by
+repeatedly swapping adjacent elements that are out of order.
+
+### Design
+
+- Incremental
+- For educational purposes
+
+### Complexity
+
+- **Best Case** - O(n^2)
+- **Average Case** - O(n^2)
+- **Worst Case** - O(n^2)
+
+### Execution Times - [[script](/plots/bubblesort_plot.py)]
+
+<p align="center">
+  <img src="/plots/assets/bubblesort.png" alt="insertion sort">
+</p>
+
 ## Insertion Sort
 
 ### Abstract
@@ -10,7 +36,8 @@ the array to be sorted. Below is the pseudocode representation of the algorithm.
 
 ### Design
 
-Incremental
+- Incremental
+- For small arrays
 
 ### Complexity
 
@@ -28,19 +55,20 @@ Incremental
 
 ### Abstract
 
-The merge sort algorithm takes advantage of the divide-and-conquer-approach. The initial array is divided in half
+The merge sort algorithm takes advantage of the divide-and-conquer approach. The initial array is divided in half
 recursively. The subarrays are sorted recursively using merge sort. Finally the two subarrays (i.e. the two halves)
 are merged together.
 
 ### Design
 
-Divide-and-Conquer
+- Divide-and-Conquer
+- For large arrays
 
 ### Complexity
 
-- **Best Case** - Θ(n log(n))
-- **Average Case** - Θ(n log(n))
-- **Worst Case** - Θ(n log(n))
+- **Best Case** - O(n log(n))
+- **Average Case** - O(n log(n))
+- **Worst Case** - O(n log(n))
 
 ### Execution Times - [[script](/plots/merge_sort_plot.py)]
 

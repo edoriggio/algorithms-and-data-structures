@@ -76,4 +76,5 @@ are merged together.
   <img src="/plots/assets/merge_sort.png" alt="merge sort">
 </p>
 
-> In all execution times graphs arrays with elements from 1 to 10.000 elements are sorted, with a step of 50 (i.e. every time the elements in the array are increased by 50)
+> In all execution times graphs arrays with elements from 1 to 10.000 elements are sorted, with a step of 50
+> (i.e. every time the elements in the array are increased by 50)

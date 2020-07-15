@@ -14,9 +14,7 @@ the array to be sorted. Below is the pseudocode representation of the algorithm.
 - **Average Case** - Θ(n^2)
 - **Worst Case** - Θ(n^2)
 
-### Execution Times - [[script](/plots/insertion_sort_plot.py)]
-
-<img style="margin-right: auto; margin-left: auto" src="/plots/assets/insertion_sort.png" alt="Insertion sort">
+### Execution Times - [[script](/plots/insertion_sort_plot.py)
 
 <p align="center">
   <img src="/plots/assets/insertion_sort.png" alt="Insertion sort">

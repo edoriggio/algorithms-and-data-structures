@@ -1,5 +1,3 @@
-# Time complexities:
-# Best case -> O(n) -> When the list is already sorted
 # Copyright 2020 Edoardo Riggio
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +22,7 @@ def insertion_sort(array: list) -> list:
     """
     Go through the array from left to right. If the number in
     the i-th position is smaller than the number before it,
-    swap the two array. Repeat the same procedure until
+    swap the two elements. Repeat the same procedure until
     the array is sorted (i.e. when the end of the array is
     reached).
 

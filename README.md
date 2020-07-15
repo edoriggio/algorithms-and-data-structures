@@ -4,7 +4,7 @@ Set of algorithms from the 2020 spring semester @ USI University
 
 ## Index
 
-- **Midterm**
+- **First Half**
   - Sorting -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/sorting)
     - Divide and Conquer -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/sorting/divide_and_conquer)
       - Heap sort -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/sorting/divide_and_conquer/heap_sort.py)
@@ -25,7 +25,7 @@ Set of algorithms from the 2020 spring semester @ USI University
     - Merge -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/misc/merge.py)
     - Selection -> [navigate](https://github.com/edoriggio/algo2020/tree/master/midterm/misc/selection.py)
     
-- **Final**
+- **Second Half**
   - Graphs -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs)
     - Breath First Search -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs/bfs.py)
     - Depth First Search -> [navigate](https://github.com/edoriggio/algo2020/tree/master/final/graphs/dfs.py)

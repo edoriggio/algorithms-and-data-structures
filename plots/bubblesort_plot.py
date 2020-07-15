@@ -17,7 +17,7 @@ import random
 
 import tqdm
 import plots.plot
-from first_half.sorting.bubblesort import bubblesort
+from sorting.bubblesort import bubblesort
 
 
 def running_times(n_tests, steps):

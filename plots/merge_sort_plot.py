@@ -17,7 +17,7 @@ import random
 
 import tqdm
 import plots.plot
-from first_half.sorting.merge_sort import merge_sort
+from sorting.merge_sort import merge_sort
 
 
 def running_times(n_tests, steps):

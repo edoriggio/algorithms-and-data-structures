@@ -17,7 +17,7 @@ import random
 
 import tqdm
 import plots.plot
-from first_half.sorting.insertion_sort import insertion_sort
+from sorting.insertion_sort import insertion_sort
 
 
 def running_times(n_tests, steps):

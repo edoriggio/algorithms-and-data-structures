@@ -16,4 +16,8 @@ the array to be sorted. Below is the pseudocode representation of the algorithm.
 
 ### Execution Times - [[script](/plots/insertion_sort_plot.py)]
 
-<img style="display: block; left: auto; right: auto" src="/plots/assets/insertion_sort.png" alt="Insertion sort">
+<img style="margin-right: auto; margin-left: auto" src="/plots/assets/insertion_sort.png" alt="Insertion sort">
+
+<p align="center">
+  <img src="/plots/assets/insertion_sort.png" alt="Insertion sort">
+</p>

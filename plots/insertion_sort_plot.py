@@ -12,10 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import time
 import random
+import time
 
 import tqdm
+
 import plots.plot
 from sorting.insertion_sort import insertion_sort
 

@@ -17,44 +17,31 @@
 # Average case -> O(n^2)
 # Worst case -> O(n^2)
 
-numbs = [int(i) for i in input().split(' ')]
 
 def selection_sort(numbs: list) -> list:
     """
     Go through the list from left to right and search for the
-    maximum. Once the maximum is found, swap it with the
+    minimum. Once the minimum is found, swap it with the
     element at the end of the array. Repeat the same procedure
-    on the subarray that goes from the beginning to the maximum
-    (excluded), until the array is sorted (i.e. when the subarray
-    is composed of only one element).
+    on the subarray that goes from the element after 'i' to the
+    end, until the array is sorted (i.e. when the subarray is
+    composed of only one element).
 
-    Args:
-        numbs (list): The array to be sorted
-    
-    Returns:
-        (list) The sorted array
+    :param numbs: The array to be sorted
+    :return: The sorted array
     """
-    j = len(numbs) - 1
-    
-    while j != 0:
-        i = 0
-        maximum = 0
+    for i in range(len(numbs)):
+        minimum = i
 
-        for index, numb in enumerate(numbs[:j+1]):
-            if numb >= maximum:
-                maximum = numb
-                i = index
+        for j in range(i + 1, len(numbs)):
+            if numbs[minimum] > numbs[j]:
+                minimum = j
 
-        numbs[i], numbs[j] = numbs[j], numbs[i]
-        j -= 1
+        numbs[i], numbs[minimum] = numbs[minimum], numbs[i]
 
     return numbs
 
-# Test with user input
-print(selection_sort(numbs))
 
-# Tests without user input
-assert selection_sort([5,2,7,4,1]) == [1,2,4,5,7]
-assert selection_sort([10,1,4,6,2]) == [1,2,4,6,10]
-assert selection_sort([5,2,9,1,4]) == [1,2,4,5,9]
-assert selection_sort([7,6,4,3,2,1]) == [1,2,3,4,6,7]
+if __name__ == '__main__':
+    data = [int(i) for i in input().split(" ")]
+    print(selection_sort(data))

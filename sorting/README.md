@@ -7,12 +7,13 @@ A sorting algorithm is an algorithm that is used to put the elements of an array
 ### Abstract
 
 This simple algorithm performs poorly in real world use and is used primarily as an educational tool. It works by
-repeatedly swapping adjacent elements that are out of order.
+repeatedly swapping adjacent elements that are out of order. This is done until the array is sorted.
 
 ### Design
 
 - Incremental
 - For educational purposes
+- In-place
 
 ### Complexity
 
@@ -39,6 +40,7 @@ the array to be sorted. Below is the pseudocode representation of the algorithm.
 
 - Incremental
 - For small arrays
+- In-place
 
 ### Complexity
 
@@ -77,5 +79,33 @@ are merged together.
   <img src="/plots/assets/merge_sort.png" alt="merge sort">
 </p>
 
-> In all execution times graphs, arrays with elements from 1 to 10.000 are sorted with a step of 50
-> in between them (i.e. every time the elements in the array are increased by 50)
+## Selection Sort
+
+### Abstract
+
+The algorithm divides the input list into two parts: a sorted sublist of items which is built up from left to right at
+the front (left) of the list and a sublist of the remaining unsorted items that occupy the rest of the list. Initially,
+the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the
+smallest element in the unsorted sublist, swapping it with the leftmost unsorted element, and moving the sublist
+boundaries one element to the right.
+
+### Design
+
+- Incremental
+- In-place
+- For small arrays
+
+### Complexity
+
+- **Best Case** - O(n^2)
+- **Average Case** - O(n^2)
+- **Worst Case** - O(n^2)
+
+### Execution Times - [[script](/plots/selection_sort_plot.py)]
+
+<p align="center">
+  <img src="/plots/assets/selection_sort.png" alt="merge sort">
+</p>
+
+> In all execution times graphs, arrays with elements from 1 to 10.000 are sorted with a step of 50 in between them
+> (i.e. every time the elements in the array are increased by 50)

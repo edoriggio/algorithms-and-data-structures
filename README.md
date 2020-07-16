@@ -11,16 +11,20 @@ Set of algorithms and data structures from the 2020 spring semester @ USI Univer
     - Bubblesort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/bubblesort.py)]
     - Insertion sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/insertion_sort.py)]
     - Selection sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/selection_sort.py)]
+
 - Searching - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/searching)]
     - Binary search - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/searching/binary_search.py)]
     - Linear search - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/searching/linear_search.py)]
+
 - Data Structures - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures)]
     - Binary heap - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/binary_heap.py)]
     - Priority queue - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/priority_queue.py)]
     - Queue - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/queue.py)]
     - Stack - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/stack.py)]
+
 - Miscellaneous - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc)]
     - Selection - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc/selection.py)]
+
 - Graphs - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/final/graphs)]
     - Breath First Search - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/final/graphs/bfs.py)]
     - Depth First Search - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/final/graphs/dfs.py)]

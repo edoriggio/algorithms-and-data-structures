@@ -18,7 +18,7 @@ import time
 import tqdm
 
 import plots.plot
-from sorting.bubblesort import bubblesort
+from sorting.selection_sort import selection_sort
 
 
 def running_times(n_tests, steps):
@@ -37,7 +37,7 @@ def running_times(n_tests, steps):
     for i in tqdm.tqdm(range(0, n_tests, steps)):
         start_t = time.time()
         input_data = [random.randint(0, 200) for _ in range(i)]
-        bubblesort(input_data)
+        selection_sort(input_data)
         end_t = time.time()
 
         times.append((end_t - start_t, i))
@@ -48,4 +48,4 @@ def running_times(n_tests, steps):
 if __name__ == '__main__':
     data = running_times(int(input("Max Elements: \n >> ")),
                          int(input("Step: \n >> ")))
-    plots.plot.plot_times(data, 'Bubblesort')
+    plots.plot.plot_times(data, 'Selection Sort')

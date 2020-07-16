@@ -22,6 +22,7 @@ repeatedly swapping adjacent elements that are out of order.
 
 ### Execution Times - [[script](/plots/bubblesort_plot.py)]
 
+<!--suppress ALL-->
 <p align="center">
   <img src="/plots/assets/bubblesort.png" alt="insertion sort">
 </p>

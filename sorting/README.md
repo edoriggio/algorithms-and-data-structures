@@ -54,31 +54,6 @@ the array to be sorted. Below is the pseudocode representation of the algorithm.
   <img src="/plots/assets/insertion_sort.png" alt="insertion sort">
 </p>
 
-## Merge Sort
-
-### Abstract
-
-The merge sort algorithm takes advantage of the divide-and-conquer approach. The initial array is divided in half
-recursively. The subarrays are sorted recursively using merge sort. Finally the two subarrays (i.e. the two halves)
-are merged together.
-
-### Design
-
-- Divide-and-Conquer
-- For large arrays
-
-### Complexity
-
-- **Best Case** - O(n log(n))
-- **Average Case** - O(n log(n))
-- **Worst Case** - O(n log(n))
-
-### Execution Times - [[script](/plots/merge_sort_plot.py)]
-
-<p align="center">
-  <img src="/plots/assets/merge_sort.png" alt="merge sort">
-</p>
-
 ## Selection Sort
 
 ### Abstract
@@ -105,6 +80,31 @@ boundaries one element to the right.
 
 <p align="center">
   <img src="/plots/assets/selection_sort.png" alt="merge sort">
+</p>
+
+## Merge Sort
+
+### Abstract
+
+The merge sort algorithm takes advantage of the divide-and-conquer approach. The initial array is divided in half
+recursively. The subarrays are sorted recursively using merge sort. Finally the two subarrays (i.e. the two halves)
+are merged together.
+
+### Design
+
+- Divide-and-Conquer
+- For large arrays
+
+### Complexity
+
+- **Best Case** - O(n log(n))
+- **Average Case** - O(n log(n))
+- **Worst Case** - O(n log(n))
+
+### Execution Times - [[script](/plots/merge_sort_plot.py)]
+
+<p align="center">
+  <img src="/plots/assets/merge_sort.png" alt="merge sort">
 </p>
 
 > In all execution times graphs, arrays with elements from 1 to 10.000 are sorted with a step of 50 in between them

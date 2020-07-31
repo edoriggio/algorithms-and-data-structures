@@ -107,5 +107,5 @@ are merged together.
   <img src="/plots/assets/merge_sort.png" alt="merge sort">
 </p>
 
-> In all execution times graphs, arrays with elements from 1 to 10.000 are sorted with a step of 50 in between them
+> In all execution times graphs, arrays from 1 element to 10.000 elements are sorted with a step of 50 in between them
 > (i.e. every time the elements in the array are increased by 50)

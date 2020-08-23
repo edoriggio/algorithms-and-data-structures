@@ -25,7 +25,7 @@ repeatedly swapping adjacent elements that are out of order. This is done until 
 
 <!--suppress ALL-->
 <p align="center">
-  <img src="/plots/assets/bubblesort.png" alt="insertion sort">
+  <img src="/plots/assets/bubblesort.png" alt="bubblesort">
 </p>
 
 ## Insertion Sort
@@ -79,7 +79,30 @@ boundaries one element to the right.
 ### Execution Times - [[script](/plots/selection_sort_plot.py)]
 
 <p align="center">
-  <img src="/plots/assets/selection_sort.png" alt="merge sort">
+  <img src="/plots/assets/selection_sort.png" alt="selection sort">
+</p>
+
+## Quick Sort
+
+### Abstract
+
+TODO: Add Abstract
+
+### Design
+
+- Recursive
+- In-place
+
+### Complexity
+
+- **Best Case** - Θ(n log(n))
+- **Average Case** - Θ(n log(n))
+- **Worst Case** - Θ(n^2)
+
+### Execution Times - [[script](/plots/quick_sort_plot.py)]
+
+<p align="center">
+  <img src="/plots/assets/quick_sort.png" alt="quick sort">
 </p>
 
 ## Merge Sort

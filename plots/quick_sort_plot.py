@@ -48,4 +48,4 @@ def running_times(n_tests, steps):
 if __name__ == '__main__':
     data = running_times(int(input("Max Elements: \n >> ")),
                          int(input("Step: \n >> ")))
-    plots.plot.plot_times(data, 'Selection Sort')
+    plots.plot.plot_times(data, 'Quick Sort')

@@ -19,19 +19,19 @@
 # Complexity:
 # O(nlog(n))
 
-def partition(array, low, high):
-    i = low - 1
-    pivot = array[high]
-
-    for j in range(low, high):
-        if array[j] <= pivot:
-            i += 1
-            array[i], array[j] = array[j], array[i]
-
-    array[high], array[i+1] = array[i+1], array[high]
-    pivot = i + 1
-
-    return pivot
+# def partition(array, low, high):
+#     i = low - 1
+#     pivot = array[high]
+#
+#     for j in range(low, high):
+#         if array[j] <= pivot:
+#             i += 1
+#             array[i], array[j] = array[j], array[i]
+#
+#     array[high], array[i+1] = array[i+1], array[high]
+#     pivot = i + 1
+#
+#     return pivot
 
 def find_largest(array, high, low = 0):
     if low < high: 

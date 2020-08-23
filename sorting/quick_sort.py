@@ -35,10 +35,10 @@ def partition(array: list, beginning: int, end: int) -> int:
     pointer = beginning - 1
     pivot = array[end]
 
-    for j in range(beginning, end):
-        if array[j] <= pivot:
+    for i in range(beginning, end):
+        if array[i] <= pivot:
             pointer += 1
-            array[pointer], array[j] = array[j], array[pointer]
+            array[pointer], array[i] = array[i], array[pointer]
 
     array[end], array[pointer + 1] = array[pointer + 1], array[end]
     pivot = pointer + 1

@@ -37,7 +37,7 @@ def running_times(n_tests, steps):
     for i in tqdm.tqdm(range(0, n_tests, steps)):
         start_t = time.time()
         input_data = [random.randint(0, 200) for _ in range(i)]
-        quick_sort(input_data)
+        quick_sort(input_data, 0, len(input_data)-1)
         end_t = time.time()
 
         times.append((end_t - start_t, i))

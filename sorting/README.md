@@ -17,9 +17,9 @@ repeatedly swapping adjacent elements that are out of order. This is done until 
 
 ### Complexity
 
-- **Best Case** - O(n^2)
-- **Average Case** - O(n^2)
-- **Worst Case** - O(n^2)
+- **Best Case** - Θ(n^2)
+- **Average Case** - Θ(n^2)
+- **Worst Case** - Θ(n^2)
 
 ### Execution Times - [[script](/plots/bubblesort_plot.py)]
 
@@ -72,9 +72,9 @@ boundaries one element to the right.
 
 ### Complexity
 
-- **Best Case** - O(n^2)
-- **Average Case** - O(n^2)
-- **Worst Case** - O(n^2)
+- **Best Case** - Θ(n^2)
+- **Average Case** - Θ(n^2)
+- **Worst Case** - Θ(n^2)
 
 ### Execution Times - [[script](/plots/selection_sort_plot.py)]
 
@@ -97,9 +97,9 @@ are merged together.
 
 ### Complexity
 
-- **Best Case** - O(n log(n))
-- **Average Case** - O(n log(n))
-- **Worst Case** - O(n log(n))
+- **Best Case** - Θ(n log(n))
+- **Average Case** - Θ(n log(n))
+- **Worst Case** - Θ(n log(n))
 
 ### Execution Times - [[script](/plots/merge_sort_plot.py)]
 

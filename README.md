@@ -1,6 +1,6 @@
 # Algorithms and Data Structures
 
-Set of algorithms and data structures from the 2020 spring semester @ USI University
+Set of algorithms and data structures from the 2021 spring semester @ USI University
 
 ## Index
 

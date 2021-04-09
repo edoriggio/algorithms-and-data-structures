@@ -12,8 +12,8 @@ repeatedly swapping adjacent elements that are out of order. This is done until 
 ### Design
 
 - Incremental
-- For educational purposes
 - In-place
+- For educational purposes
 
 ### Complexity
 
@@ -39,8 +39,8 @@ the array to be sorted. Below is the pseudocode representation of the algorithm.
 ### Design
 
 - Incremental
-- For small arrays
 - In-place
+- For small arrays
 
 ### Complexity
 
@@ -86,12 +86,15 @@ boundaries one element to the right.
 
 ### Abstract
 
-TODO: Add Abstract
+Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and partitioning
+the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The
+sub-arrays are then sorted recursively. This can be done in-place.
 
 ### Design
 
 - Recursive
 - In-place
+- Efficient
 
 ### Complexity
 
@@ -115,8 +118,9 @@ are merged together.
 
 ### Design
 
-- Divide-and-Conquer
+- Recursive
 - For large arrays
+- Efficient
 
 ### Complexity
 
@@ -132,3 +136,5 @@ are merged together.
 
 > In all execution times graphs, arrays from 1 element to 10.000 elements are sorted with a step of 50 in between them
 > (i.e. every time the elements in the array are increased by 50)
+
+> Machine used to calculate results: MacBook Pro 2019, 2.6 GHz 6-Core Intel Core i7, 16 GB 2400 MHz DDR4

@@ -12,42 +12,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-graph_no_cycles = {
-    1: [5,6],
-    2: [3,7],
-    3: [4,7],
-    4: [7],
-    5: [9],
-    6: [2,7,9],
-    7: [8,10,11],
-    8: [11,12],
-    9: [10],
-    10: [],
-    11: [12],
-    12: []
-}
+# Time complexity: O(n)
+# Space complexity: O(1)
 
-graph_letters_cycle_4 = {
-    'A' : ['B'],
-    'B' : ['D', 'E'],
-    'C' : ['A'],
-    'D' : [],
-    'E' : ['C'],
-    'F' : []
-}
+def rotate(A, k):
+    if k > len(A) or k == 0:
+        return A
 
-graph_letters_cycle = {
-    'A' : ['B'],
-    'B' : ['D', 'E'],
-    'C' : ['A'],
-    'D' : [],
-    'E' : ['F'],
-    'F' : ['C']
-}
+    A = reverse(A, 0, len(A)-1)
+    A = reverse(A, 0, len(A)-k-1)
+    A = reverse(A, len(A)-k, len(A)-1)
 
-user_network = {
-    'a' : ['h', 'f'],
-    'b' : ['g','i','e'],
-    'c' : ['i','f','e'],
-    'd' : ['i', 'e']
-}
+    return A
+
+
+def reverse(A, b, e):
+    i = b
+    j = e
+
+    # While loop -> n
+    while i != j:
+        A[i], A[j] = A[j], A[i]
+
+        if (i + 1 == j):
+            break
+
+        i += 1
+        j -= 1
+
+    return A
+
+
+arr = [1, 2, 3, 4, 6, 7, 8, 9]
+print(rotate(arr, 3))

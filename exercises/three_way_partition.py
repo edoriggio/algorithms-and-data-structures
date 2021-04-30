@@ -12,23 +12,32 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Problem:
-# Write a function is_sorted(A) that returns True if A issorted in either
-# ascending or descending order. Analyze the complexity of is_sorted(A).
+# Complexity: O(n)
 
-# Complexity:
-# O(n)
+def three_way_partition(A, begin, end):
+    numb = 0
+    pivot = 0
 
-def is_sorted(array):
-    descending = False
+    for i in range(begin, end):
 
-    for i in range(len(array)-1):
-        if array[i] > array[i - 1]:
-            descending = True
+        if A[i] > numb:
+            pivot = i
+            numb = A[i]
 
-    if not descending or sorted(array) == array:
-        return True
-    else:
-        return False
+    A[pivot], A[end-1] = A[end-1], A[pivot]
 
-print(is_sorted([1,5,6,7,9,20]))
+    i = begin
+    j = end-2
+    
+    while i < j:
+        if A[i] == numb:
+            A[i], A[j] = A[j], A[i]
+            j -= 1
+
+        i += 1
+
+    print(A)
+
+
+arr = [100,2,100,200,200,10,0,98,2]
+three_way_partition(arr, 0, len(arr))

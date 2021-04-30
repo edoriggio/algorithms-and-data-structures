@@ -12,23 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Problem:
-# Find the n-th number of the Fibonacci sequence by only using dynamic
-# programming and memoization.
+# Complexity: O(log(n))
 
-# Complexity:
-# O(n)
+def unimodal_find_maximum(A):
+    low = 0
+    high = len(A) - 1
+    mid = 0
 
-def dp_fib(n):
-    memo = []
+    while low <= high:
+        mid = (high + low) // 2
 
-    for k in range(n):
-        if k < 2:
-            memo.append(1)
+        if A[mid - 1] > A[mid] and A[mid] > A[mid + 1]:
+            high = mid - 1
+        elif A[mid + 1] > A[mid] and A[mid] > A[mid - 1]:
+            low = mid + 1
         else:
-            next_n = memo[k-1] + memo[k-2]
-            memo.append(next_n)
+            return A[mid]
 
-    return memo
 
-print(dp_fib(10))
+arr = [1, 5, 19, 17, 12, 8, 5, 3, 2]
+print(unimodal_find_maximum(arr))

@@ -12,25 +12,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Problem:
-# Write an algorithm called Find-Largest that finds the largest number
-# in an array using a divide-and-conquer strategy.
+# Complexity: O(n^2)
 
-# Complexity:
-# O(n^2)
+def partition_primes_composite(A):
+    for i in range(len(A) - 1):
+        for j in range(i+1, len(A)):
+            if is_prime(A[j]) and not is_prime(A[i]):
+                A[i], A[j] = A[j], A[i]
+                continue
+            elif is_prime(A[i]):
+                continue
 
-def in_place_sel_sort(array):
-    for i in range(len(array)):
-        temp = i
-        j = i - 1
+    print(A)
 
-        while j >= 0:
-            if array[temp] < array[j]:
-                array[temp], array[j] = array[j], array[temp]
-                temp -= 1
-            
-            j -= 1
 
-    return array
+def is_prime(n):
+    flag = False
 
-print(in_place_sel_sort([7,17,89,74,21,7,43,9,26,10]))
+    if n > 1:
+        for i in range(2, n):
+            if (n % i) == 0:
+                flag = True
+                break
+
+    return not flag
+
+
+arr = [1, 10, 2, 4, 6, 9, 14, 3, 1, 6]
+partition_primes_composite(arr)

@@ -1,4 +1,4 @@
-# Copyright 2020 Edoardo Riggio
+# Copyright 2021 Edoardo Riggio
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,142 +12,57 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import sys
-
 class Queue:
+    """Class for the fixed-size Queue data structure. It contains the data and
+    metadata of the Queue.
     """
-    This class represents a queue. A queue is a FIFO data
-    structure (First In First Out) of fixed size. When
-    initialized, it creates a queue of a number of None
-    objects equal to the length that is given as a parameter.
+    queue: list
+    length: int
 
-    Args:
-        length (int): The length of the queue
+    tail: int
+    head: int
 
-    Attributes:
-        length (int): The length of the queue
-        top (int): The index of the last element of the queue
-        data (list): The data contained in the queue
-    """
-    def __init__(self, length: int):
+    empty: bool
+    full: bool
+
+    def __init__(self, length):
+        self.queue = [None] * length
         self.length = length
-        self.data = [None] * self.length
-        self.head = 0
-        self.tail = 0
+        self.head = self.tail = 0
+        self.empty = True
+        self.full = False
 
-    def queue_next(self, element: int) -> int:
-        """
-        Check which is the succeding index of the
-        one given.
-
-        Args:
-            element (int): The element to check
-
-        Returns:
-            (int): The index of the succeding element
-        """
-        if element == self.length - 1:
-            return 0
-        else:
-            return element + 1
-
-    def enqueue(self, element: int) -> None:
-        """
-        Check if the queue is full. If it is not full, then
-        add the element given at the bottom of the queue.
+    def enqueue(self, value):
+        """Insert the given value at the tail pointer of the Queue, return
+        error if overflow occurs.
 
         Args:
-            element (int): The element to add
-
-        Returns:
-            (None) Nothing
+            value (void): a value to be inserted into the Queue
         """
-        if self.check_full():
-           print('Queue Overflow')
-           return
-
-        self.data[self.tail] = element
-        self.tail = self.queue_next(self.tail)
-
-    def dequeue(self) -> None:
-        """
-        Check if the queue is empty. If it is not empty, then
-        remove the first element of the queue and prints it.
-
-        Returns:
-            (None) Nothing
-        """
-        if self.check_empty():
-            print('Queue Underflow')
+        if not self.full:
+            self.queue[self.tail] = value
+            self.tail = (self.tail + 1) % self.length
+            self.empty = False
+        elif self.full:
+            print("OVERFLOW")
             return
 
-        removed = self.data[self.head]
-        self.data[self.head] = None
-        self.head = self.queue_next(self.head)
-        print(removed)
+        self.full = self.tail == self.head
 
-    def check_empty(self) -> bool:
-        """
-        Check if all the elements in the queue
-        are None objects.
+    def dequeue(self):
+        """Remove the item to which 'head' is pointing from the Queue.
 
         Returns:
-            (bool) True if the queue is empty
-                   False if the queue is not empty
+            void: the removed element
         """
-        for i in self.data:
-            if i != None:
-                return False
+        if not self.empty:
+            value = self.queue[self.head]
+            self.queue[self.head] = None
+            self.head = (self.head + 1) % self.length
+            self.full = False
+        elif self.empty:
+            print("UNDERFLOW")
+            return
 
-        return True
-
-    def check_full(self) -> bool:
-        """
-        Check if all the elements in the queue
-        are not None objects.
-
-        Returns:
-            (bool) True if the queue is full
-                   False if the queue is not full
-        """
-        for i in self.data:
-            if i == None:
-                return False
-
-        return True
-
-    def print_self(self):
-        """
-        Print the data, head and tail values of the queue.
-        """
-        print('Data: {}\nHead: {}, Tail: {}'.format(self.data, self.head, self.tail))
-
-test_queue: Queue
-
-# Driver
-for l in sys.stdin:
-    l = l.split()
-
-    if len(l) == 0:
-        print('%')
-        continue
-
-    elif l[0] == 'init':
-        test_queue = Queue(int(l[1]))
-        print('%')
-
-    elif l[0] == '+':
-        test_queue.enqueue(int(l[1]))
-        print('%')
-
-    elif l[0] == '-':
-        test_queue.dequeue()
-        print('%')
-
-    elif l[0] == 'print':
-        test_queue.print_self()
-        print('%')
-
-    else:
-        print('unknown command:', l[0])
-        print('%')
+        self.empty = self.head == self.tail
+        return value

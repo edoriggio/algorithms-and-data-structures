@@ -1,4 +1,4 @@
-# Copyright 2020 Edoardo Riggio
+# Copyright 2021 Edoardo Riggio
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,106 +12,62 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import sys
-
 class Stack:
+    """Class for the Stack data structure. It contains data and metadata
+    about the Stack.
     """
-    This class represents a stack. A stack is a LIFO data
-    structure (Last In First Out) of fixed size. When
-    initialized, it creates a stack of a number of None
-    objects equal to the length that is given as parameter.
+    stack: list
+    top: int
 
-    Args:
-        length (int): The length of the stack
+    def __init__(self):
+        self.stack = []
+        self.top = -1
 
-    Attributes:
-        length (int): The length of the stack
-        top (int): The index of the last element of the stack
-        is_empty (bool): Indicates if the stack is empty or not
-        data (list): The data contained in the stack
-    """
-    def __init__ (self, length: int):
-        self.length = length
-        self.data = [None] * self.length
-        self.top = 0
-        self.is_empty = True
-
-    def push(self, element: int):
-        """
-        Add the element passed as input at the end of the stack.
-        This element must be added iff the stack is not full yet
-        (i.e. top is smaller than the length of the stack).
-
-        Args:
-            element (int): The element to be added to the stack
-        """
-        if self.top < self.length:
-            self.data[self.top] = element
-            self.top += 1
-            self.is_empty = False
-        else:
-            print('Stack Overflow')
-
-    def pop(self):
-        """
-        Remove the last element of the stack and print it in the
-        terminal. The element must be removed iff the stack is not
-        empty yet (i.e. top is not equal to 0).
-        """
-        if self.top != 0:
-            print(self.data[self.top-1])
-            self.top -= 1
-            self.data[self.top] = None
-            self.is_empty = True if self.top == 0 else False
-        else:
-            print('Stack Underflow')
-
-    def check_empty(self) -> bool:
-        """
-        Check if the stack is empty or not.
+    def is_empty(self):
+        """Return if the Stack is empty or not.
 
         Returns:
-            (bool): True if the stack is empty
-                    False otherwise
+            Bool: stack is empty or not
         """
-        print(self.is_empty)
+        return self.top == -1
 
-    def print_self(self):
+    def push(self, value):
+        """Push the given value onto the stack.
+
+        Args:
+            value (void): the value to push
         """
-        Print the data, top and is_empty values of the stack.
+        self.top += 1
+        self.stack.append(value)
+
+    def pop(self):
+        """Pop the last value from the stack and return it.
+
+        Returns:
+            void: the popped value
         """
-        print('data: {}\ntop: {}\nEmpty: {}'.format(self.data, self.top, self.is_empty))
+        if self.top > -1:
+            value = self.stack[self.top]
+            del self.stack[self.top]
+            self.top -= 1
 
-test_stack: Stack
+            return value
 
-# Driver
-for l in sys.stdin:
-    l = l.split()
+        print("UNDERFLOW")
 
-    if len(l) == 0:
-        print('%')
-        continue
+    def to_string(self):
+        """Return a strigified representation of the stack
 
-    elif l[0] == 'init':
-        test_stack = Stack(int(l[1]))
-        print('%')
+        Returns:
+            String: the representation of the stack
+        """
+        output = "Stack: "
 
-    elif l[0] == 'push':
-        test_stack.push(int(l[1]))
-        print('%')
+        for i in range(self.top+1):
+            if i == self.top:
+                output += f"{self.stack[i]}"
+                break
 
-    elif l[0] == 'pop':
-        test_stack.pop()
-        print('%')
+            output += f"{self.stack[i]}, "
 
-    elif l[0] == 'empty':
-        test_stack.check_empty()
-        print('%')
-
-    elif l[0] == 'print':
-        test_stack.print_self()
-        print('%')
-
-    else:
-        print('unknown command:', l[0])
-        print('%')
+        return output

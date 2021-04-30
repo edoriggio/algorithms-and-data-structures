@@ -1,6 +1,6 @@
 # Time complexities:
 # Best case -> O(n) -> When the list is already sorted
-# Copyright 2020 Edoardo Riggio
+# Copyright 2021 Edoardo Riggio
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.

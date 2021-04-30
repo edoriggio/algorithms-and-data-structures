@@ -28,3 +28,8 @@ It is a data structure with fixed size of length *n*, with two main operations:
 - **Dequeue** - removes the first element from the collection that was not yet removed
 
 The elements of these data structure are taken and added wsing a **FIFO** (First-In First-Out) order. Elements can only be added at the beginning of the queue and taken from the end of the queue.
+
+### Complexities
+
+- **Enqueue** - Θ(1)
+- **Dequeue** - Θ(1)

@@ -12,18 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import sys
-
 class Priority_Queue:
     """
     This class represents a priority queue. In this data
     structure elements are retrieved form the queue (i.e.
     dequeued) in descending order based on the priority
     of the element.
-
-    Attributes:
-        data (list): The data contained in the priority queue
     """
+
+    data: list
+
     def __init__(self):
         self.data = []
 
@@ -50,7 +48,7 @@ class Priority_Queue:
             (int) The index of the left child node
         """
         return 2 * element + 1
-    
+
     def right(self, element: int) -> int:
         """
         Find the index of the right child node of a given node.
@@ -92,7 +90,7 @@ class Priority_Queue:
         if len(self.data) == 0:
             print('Priority Queue Underflow')
             return
-        
+
         result = self.data[0]
         self.data[0] = self.data[len(self.data) - 1]
         del self.data[len(self.data) - 1]
@@ -121,34 +119,3 @@ class Priority_Queue:
         Print the data and the length values of the priority queue.
         """
         print('Data: {} Length: {}'.format(self.data, len(self.data)))
-
-test_queue: Priority_Queue
-
-# Driver
-for l in sys.stdin:
-    l = l.split()
-
-    if len(l) == 0:
-        print('%')
-        continue
-
-    elif l[0] == 'init':
-        test_queue = Priority_Queue()
-        test_queue.print_self()
-        print('%')
-
-    elif l[0] == '+':
-        test_queue.enqueue(int(l[1]), int(l[2]))
-        print('%')
-
-    elif l[0] == '-':
-        test_queue.dequeue()
-        print('%')
-
-    elif l[0] == 'print':
-        test_queue.print_self()
-        print('%')
-
-    else:
-        print('unknown command:', l[0])
-        print('%')

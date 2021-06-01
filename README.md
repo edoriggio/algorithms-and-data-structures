@@ -17,10 +17,11 @@ Set of algorithms and data structures with exercises.
     - Linear search - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/searching/linear_search.py)]
 
 - Data Structures - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures)]
-    <!-- - Binary heap - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/binary_heap.py)] -->
+    - Binary heap - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/binary_heap.py)]
     <!-- - Priority queue - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/priority_queue.py)] -->
     - Stack - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/stack.py)]
     - Queue - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/queue.py)]
+    - Doubly Linked List with Sentinel - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/linked_list.py)]
 
 <!-- - Miscellaneous - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc)]
     - Selection - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc/selection.py)] -->

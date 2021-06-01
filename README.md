@@ -24,13 +24,13 @@ Set of algorithms and data structures with exercises.
     - Linear search - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/searching/linear_search.py)]
 
 - Graphs - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs)]
-    - BFS - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/bfs.py)]
-    - DFS - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dfs.py)]
-    - Read directed graphs - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/directed.py)]
-    - Read undirected graphs - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/undirected.py)]
+    - BFS - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs/bfs.py)]
+    - DFS - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs/dfs.py)]
+    - Read directed graphs - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs/directed.py)]
+    - Read undirected graphs - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs/undirected.py)]
 
 - Misc - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc)]
-    - BST visualizer - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/bst_visualizer.py)]
-    - Reverse arrays - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/reverse.py)]
+    - BST visualizer - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc/bst_visualizer.py)]
+    - Reverse arrays - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc/reverse.py)]
 
 - Exercises [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/exercises)]

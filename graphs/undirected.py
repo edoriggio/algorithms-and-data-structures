@@ -12,26 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-graph_numbers = {
-    1: [5,6],
-    2: [3,7],
-    3: [4,7],
-    4: [7],
-    5: [9],
-    6: [2,7,9],
-    7: [8,10,11],
-    8: [11,12],
-    9: [10],
-    10: [],
-    11: [12],
-    12: []
-}
+import sys
 
-graph_letters = {
-    'A' : ['B','C'],
-    'B' : ['D', 'E'],
-    'C' : ['F'],
-    'D' : [],
-    'E' : ['F'],
-    'F' : []
-}
+
+def read_undirected():
+    """Read undirected graphs from input.
+
+    Returns:
+        dict: set of nodes and their connections
+    """
+    Nodes = {}
+
+    for line in sys.stdin:
+        regions = line.split()
+
+        for i in range(len(regions)):
+            try:
+                Nodes[regions[i]]
+            except KeyError:
+                Nodes[regions[i]] = []
+
+        for i in range(1, len(regions)):
+            Nodes[regions[i]].append(regions[0])
+            Nodes[regions[0]].append(regions[i])
+
+    return Nodes

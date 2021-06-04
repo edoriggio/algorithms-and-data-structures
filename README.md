@@ -27,6 +27,10 @@ Set of algorithms and data structures with exercises.
     - BFS - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs/bfs.py)]
     - DFS - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs/dfs.py)]
 
+- Dynamic Programming - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp)]
+    - Knapsack - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp/knapsack.py)]
+    - Minimal Contiguous Sum - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp/minimal_contiguous_sum.py)]
+
 - Misc - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc)]
     - Reverse arrays - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc/reverse.py)]
     - BST visualizer - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/misc/bst_visualizer.py)]

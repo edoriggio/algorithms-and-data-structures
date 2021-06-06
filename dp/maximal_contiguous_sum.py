@@ -14,7 +14,7 @@
 
 # Complexity: O(n)
 
-def maximal_continuous_sum(A):
+def maximal_contiguous_sum(A):
     if len(A) < 1:
         return None
 
@@ -29,4 +29,4 @@ def maximal_continuous_sum(A):
 
 
 array = [1, 4, 2, 0, -1, -5, 9, 10, 2]
-print(maximal_continuous_sum(array))
+print(maximal_contiguous_sum(array))

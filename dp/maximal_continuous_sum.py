@@ -12,25 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Complexity: O(len(values) * max_w)
+# Complexity: O(n)
 
-def knapsack(values, weights, max_w):
-    x = [0] * (max_w+1)
-    DP = []
+def maximal_continuous_sum(A):
+    if len(A) < 1:
+        return None
 
-    for _ in range(len(values)+1):
-        DP.append(x[:])
+    dp = A[0]
+    max_sum = A[0]
 
-    for i in range(1, max_w+1):
-        for j in range(1, len(x)):
-            if i-1 >= len(values):
-                return DP[-1][-1]
+    for i in range(len(A)-1):
+        dp = max(dp + A[i+1], A[i+1])
+        max_sum = max(dp, max_sum)
 
-            if j >= weights[i-1]:
-                DP[i][j] = max(DP[i-1][j], values[i-1] +
-                               DP[i-1][j - weights[i-1]])
-            else:
-                DP[i][j] = DP[i-1][j]
+    return max_sum
 
 
-print(knapsack([10, 15, 40], [1, 2, 3], 6))
+array = [1, 4, 2, 0, -1, -5, 9, 10, 2]
+print(maximal_continuous_sum(array))

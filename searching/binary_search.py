@@ -20,13 +20,11 @@
 
 from math import ceil
 
-numbs = [int(i) for i in input().split(' ')]
-to_find = int(input())
 
-def binary_search(numbs: list, to_find: int) -> bool:
+def binary_search(numbs: list, to_find: int):
     """
     Get the element in the middle of a sorted array. If the number
-    to find si greater than the mid, then let the right subarray be
+    to find is greater than the mid, then let the right subarray be
     the new array and repeat the first step here. Otherwise repeat
     the first step on the left subarray. If the value to find is
     equal to the mid, then return true. If the element is not found
@@ -52,11 +50,5 @@ def binary_search(numbs: list, to_find: int) -> bool:
     else:
         return False
 
-# Test with user input
-print(binary_search(numbs, to_find))
 
-# Tests without user input
-assert binary_search([1,2,3,4,5], 5) == True
-assert binary_search([2,4,6,8,10], 2) == True
-assert binary_search([-1,-2,1,2,3], 1) == True
-assert binary_search([1,3,5,6,8,9], 20) == False
+print(binary_search([1, 2, 3, 4, 5], 5))

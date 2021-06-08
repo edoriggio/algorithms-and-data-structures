@@ -17,10 +17,31 @@
 # Average case -> O(n log(n))
 # Worst case -> O(n log(n))
 
-from math import ceil
+def merge_sort(A, begin, end):
+    """
+    Find the midpoint of the array and divide it into
+    two subarray. This is repeated until the subarrays
+    have all length = 1. After the array has been
+    divided, apply the merge algorithm on the subarrays
+    in order to obtain a second_half sorted array (without
+    duplicates)
+
+    :param array: The array to be sorted
+    :return: The sorted array
+    """
+    if end - begin == 1:
+        return [A[begin]]
+    elif end - begin == 0:
+        return []
+
+    m = (begin + end) // 2
+    L = merge_sort(A, begin, m)
+    R = merge_sort(A, m, end)
+
+    return merge(L, R)
 
 
-def merge(numbs1: list, numbs2: list) -> list:
+def merge(numbs1, numbs2):
     """
     Go through the two sorted arrays simultaneously from
     left to right. Find the smallest element between the
@@ -41,10 +62,10 @@ def merge(numbs1: list, numbs2: list) -> list:
     i = j = 0
 
     while i < len(numbs1) and j < len(numbs2):
-        if numbs1[i] < numbs2[j]:
+        if numbs1[i] <= numbs2[j]:
             sorted_numbs.append(numbs1[i])
             i += 1
-        elif numbs2[j] < numbs1[i]:
+        elif numbs2[j] <= numbs1[i]:
             sorted_numbs.append(numbs2[j])
             j += 1
         else:
@@ -53,36 +74,11 @@ def merge(numbs1: list, numbs2: list) -> list:
             j += 1
 
     if i < len(numbs1):
-        sorted_numbs += numbs1[i:]
+        for k in range(i, len(numbs1)):
+            sorted_numbs.append(numbs1[k])
 
     if j < len(numbs2):
-        sorted_numbs += numbs2[j:]
+        for l in range(j, len(numbs2)):
+            sorted_numbs.append(numbs2[l])
 
     return sorted_numbs
-
-
-def merge_sort(array: list) -> list:
-    """
-    Find the midpoint of the array and divide it into
-    two subarray. This is repeated until the subarrays
-    have all length = 1. After the array has been
-    divided, apply the merge algorithm on the subarrays
-    in order to obtain a second_half sorted array (without
-    duplicates)
-
-    :param array: The array to be sorted
-    :return: The sorted array
-    """
-    if len(array) < 2:
-        return array
-
-    mid = ceil(len(array) / 2)
-    left = merge_sort(array[:mid])
-    right = merge_sort(array[mid:])
-
-    return merge(left, right)
-
-
-if __name__ == '__main__':
-    data = [int(i) for i in input().split(" ")]
-    print(merge_sort(data))

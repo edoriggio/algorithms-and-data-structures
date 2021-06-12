@@ -12,30 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Compolexity: O(n^2)
+def fibonacci(n):
+    numbs = [0, 1]
+    
+    for i in range(2, n+1):
+        numbs.append(numbs[i-2] + numbs[i-1])
 
-def cluster(A):
-    i = 0
-
-    # Complexity: O(n)
-    while i < len(A)-1:
-        current = i
-
-        # Complexity: O(n)
-        for j in range(i+1, len(A)):
-            if equals(A[j], A[i]):
-                A[j], A[i+1] = A[i+1], A[j]
-                i += 1
-        
-        if i == current:
-            i += 1
-
-    return A
+    return numbs
 
 
-def equals(x, y):
-    return x == y
-
-
-array = [1, 2, 4, 5, 3, 1, 1, 4, 5]
-print(cluster(array))
+print(fibonacci(5))

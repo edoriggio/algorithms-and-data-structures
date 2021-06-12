@@ -24,10 +24,11 @@ def two_primes(number):
     x = [0] * (number+1)
     DP = []
 
-    # Complexity: O(n * len(primes))
+    # Complexity O(len(primes))
     for _ in range(len(primes)+1):
         DP.append(x[:])
 
+    # Complexity: O(n * len(primes))
     for i in range(1, number+1):
         for j in range(1, len(x)):
             if i-1 >= len(primes):
@@ -40,13 +41,14 @@ def two_primes(number):
                 DP[i][j] = DP[i-1][j]
 
 
-# Complexity: O(n^2)
 def find_primes(number):
     primes = []
 
+    # Complexity: O(n)
     for i in range(2, number+1):
         is_prime = True
 
+        # Complexity: O(n)
         for j in range(2, i):
             if i % j == 0:
                 is_prime = False

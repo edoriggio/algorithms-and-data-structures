@@ -27,7 +27,6 @@ def inc_dec_subsequence(A, k, certificate):
             j += 1
 
     if j == len(certificate):
-        
         return True
 
     return False

@@ -6,6 +6,7 @@ Set of algorithms and data structures with exercises.
 
 - Sorting - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting)]
     - Bubblesort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/bubblesort.py)]
+    - Heapsort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/heapsort.py)]
     - Insertion sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/insertion_sort.py)]
     - Merge sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/merge_sort.py)]
     - Quick sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/quick_sort.py)]

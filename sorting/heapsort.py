@@ -17,11 +17,10 @@
 # Average case -> O(nlog(n))
 # Worst case -> O(nlog(n))
 
-from binary_heap import build_max_heap, max_heapify
+from math import floor
 
-numbs = [int(i) for i in input().split(' ')]
 
-def heap_sort(heap: list) -> list:
+def heapsort(heap):
     """
     Build a max-heap from the array given as input, and then
     iterate from the end of the heap to the beginning. During
@@ -50,11 +49,39 @@ def heap_sort(heap: list) -> list:
 
     return heap
 
-# Test with user input
-print(heap_sort(numbs))
 
-# Tests without user input
-assert heap_sort([5,2,7,4,1]) == [1,2,4,5,7]
-assert heap_sort([10,1,4,6,2]) == [1,2,4,6,10]
-assert heap_sort([5,2,9,1,4]) == [1,2,4,5,9]
-assert heap_sort([7,6,4,3,2,1]) == [1,2,3,4,6,7]
+# Heap aux functions
+
+def parent(i):
+    return floor(i / 2)
+
+
+def left(i):
+    return 2 * i + 1
+
+
+def right(i):
+    return 2 * i + 2
+
+
+def max_heapify(A, i, heap_size):
+    l = left(i)
+    r = right(i)
+    if l < heap_size and A[l] > A[i]:
+        largest = l
+    else:
+        largest = i
+    if r < heap_size and A[r] > A[largest]:
+        largest = r
+    if largest != i:
+        temp = A[i]
+        A[i] = A[largest]
+        A[largest] = temp
+        max_heapify(A, largest, heap_size)
+
+
+def build_max_heap(A):
+    i = int((floor(len(A))) / 2)
+    while i >= 0:
+        max_heapify(A, i, len(A))
+        i -= 1

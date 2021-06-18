@@ -36,4 +36,5 @@ def plot_times(times_array, name):
     plt.ylim(0, max(times) + 0.005)
     plt.isinteractive()
     plt.title(name)
+    # plt.savefig('testplot.png')
     plt.show()

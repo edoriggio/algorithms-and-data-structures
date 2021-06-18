@@ -123,6 +123,30 @@ The merge sort algorithm takes advantage of the divide-and-conquer approach. The
   <img src="/plots/assets/merge_sort.png" alt="merge sort">
 </p>
 
+## Hepsort
+
+### Abstract
+
+Heapsort divides the input into a sorted and an unsorted region. It then takes the largest element from the unsorted region and inserts it into the sorted region. The unsorted region is kept as a heap, which allows finding the largest element quickly.
+
+### Design
+
+- For large arrays
+- In-place
+- Efficient
+
+### Complexity
+
+- **Best Case** - Θ(n log(n))
+- **Average Case** - Θ(n log(n))
+- **Worst Case** - Θ(n log(n))
+
+### Execution Times - [[script](/plots/heapsort_plot.py)]
+
+<p align="center">
+  <img src="/plots/assets/heapsort.png" alt="heapsort">
+</p>
+
 > In all execution times graphs, arrays from 1 element to 10.000 elements are sorted with a step of 50 in between them
 > (i.e. every time the elements in the array are increased by 50)
 

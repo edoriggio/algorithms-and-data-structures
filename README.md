@@ -10,7 +10,6 @@ Set of algorithms and data structures with exercises.
     - Merge sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/merge_sort.py)]
     - Quick sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/quick_sort.py)]
     - Selection sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/selection_sort.py)]
-    <!-- - Heap sort - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/sorting/heap_sort.py)] -->
 
 - Data Structures - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures)]
     - Binary heap - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/data_structures/binary_heap.py)]
@@ -28,6 +27,7 @@ Set of algorithms and data structures with exercises.
     - DFS - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/graphs/dfs.py)]
 
 - Dynamic Programming - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp)]
+    - Fibonacci - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp/fibonacci.py)]
     - Knapsack - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp/knapsack.py)]
     - Maximal Contiguous Sum - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp/maximal_contiguous_sum.py)]
     - Minimal Contiguous Sum - [[navigate](https://github.com/edoriggio/algorithms-and-data-structures/tree/master/dp/minimal_contiguous_sum.py)]
